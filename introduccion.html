@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrés al Estudiar y Rendimiento Académico</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            background-color: #4CAF50;
+        }
+
+        .content {
+            display: none;
+            padding: 20px;
+            animation: fadeIn 1s;
+        }
+
+        .content.active {
+            display: block;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: circle;
+            padding-left: 40px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Estrés al Estudiar y Rendimiento Académico
+    </header>
+
+    <nav>
+        <a href="#home" onclick="openTab(event, 'home')">Inicio</a>
+        <a href="#definicion" onclick="openTab(event, 'definicion')">¿Qué es el Estrés?</a>
+        <a href="#causas" onclick="openTab(event, 'causas')">Causas del Estrés</a>
+        <a href="#efectos" onclick="openTab(event, 'efectos')">Efectos en el Rendimiento</a>
+        <a href="#soluciones" onclick="openTab(event, 'soluciones')">Soluciones</a>
+    </nav>
+
+    <section id="home" class="content active">
+        <h1 class="section-title">Bienvenido</h1>
+        <p>
+            El estrés es un fenómeno común en la vida de los estudiantes, especialmente durante épocas de exámenes o 
+            cuando las demandas académicas se incrementan. Aunque el estrés puede ser visto como una respuesta natural 
+            ante ciertos desafíos, si no se maneja adecuadamente, puede tener efectos negativos tanto en la salud física 
+            como mental de los estudiantes.
+        </p>
+        <p>
+            En esta página, exploraremos cómo el estrés afecta el rendimiento académico, las principales causas que lo 
+            generan y las posibles soluciones que pueden ayudar a los estudiantes a sobrellevarlo. A lo largo de los 
+            diferentes apartados, abordaremos tanto aspectos científicos como consejos prácticos para mejorar el bienestar 
+            general y evitar que el estrés impacte negativamente en la vida académica.
+        </p>
+        <img src="Estres 1.jpg" alt="Estudiante estresado estudiando">
+    </section>
+
+    <section id="definicion" class="content">
+        <h1 class="section-title">¿Qué es el Estrés?</h1>
+        <p>
+            El estrés es una respuesta fisiológica y psicológica a situaciones que percibimos como amenazantes o desafiantes. 
+            En el contexto académico, esta respuesta es comúnmente activada por eventos como exámenes, proyectos, trabajos en 
+            grupo o la carga general de estudio. Aunque una cierta cantidad de estrés puede ser útil para mantenernos enfocados 
+            y motivados, niveles elevados o prolongados de estrés pueden tener consecuencias negativas.
+        </p>
+        <p>
+            En términos científicos, el estrés se activa cuando el cuerpo libera hormonas como el cortisol y la adrenalina. 
+            Estas hormonas nos preparan para enfrentar una amenaza (la famosa respuesta de “lucha o huida”), lo cual puede 
+            ser útil a corto plazo. Sin embargo, cuando estamos sometidos a un estrés continuo o crónico, estas mismas hormonas 
+            pueden dañar nuestro bienestar físico y mental.
+        </p>
+        <p>
+            Existen dos tipos principales de estrés: 
+        </p>
+        <ul>
+            <li><strong>Estrés agudo:</strong> Es el tipo de estrés que experimentamos en respuesta a un evento puntual. Por ejemplo, 
+                antes de una prueba o una presentación importante.</li>
+            <li><strong>Estrés crónico:</strong> Se produce cuando el individuo está sometido a una presión constante durante largos 
+                periodos. En el ámbito académico, puede ser el resultado de cargas de trabajo excesivas o la presión constante por 
+                obtener buenos resultados.</li>
+        </ul>
+        <p>
+            En el caso de los estudiantes, el estrés agudo puede ser beneficioso, ya que ayuda a concentrarse y trabajar más rápido 
+            bajo presión. No obstante, el estrés crónico tiende a generar problemas de salud mental, como la ansiedad, depresión e 
+            incluso trastornos del sueño.
+        </p>
+        <img src="estres2.jpg" alt="Ilustración del concepto de estrés">
+    </section>
+
+    <section id="causas" class="content">
+        <h1 class="section-title">Causas del Estrés Académico</h1>
+        <p>
+            Las causas del estrés académico varían de un estudiante a otro, pero hay ciertos factores comunes que afectan a la 
+            mayoría de los estudiantes. Identificar las causas es crucial para encontrar maneras efectivas de enfrentarlas. 
+        </p>
+        <p>Entre las causas más comunes del estrés en los estudiantes encontramos:</p>
+        <ul>
+            <li><strong>Exámenes:</strong> Los exámenes generan gran ansiedad debido a la presión por obtener buenas calificaciones. 
+                Los estudiantes a menudo sienten que sus habilidades y esfuerzos están siendo evaluados en un corto periodo de tiempo, 
+                lo que aumenta la presión.</li>
+            <li><strong>Fechas límite estrictas:</strong> Los proyectos y trabajos académicos suelen tener plazos ajustados, lo que 
+                puede causar tensión cuando varios trabajos coinciden en fechas de entrega cercanas.</li>
+            <li><strong>Falta de tiempo:</strong> Muchos estudiantes experimentan una falta de tiempo para equilibrar su vida social, 
+                actividades extracurriculares y obligaciones académicas. Esto crea una sensación de estar "ahogados" por el trabajo.</li>
+            <li><strong>Expectativas de otros:</strong> La presión de padres, profesores o compañeros para obtener buenos resultados 
+                académicos puede hacer que el estudiante sienta que su valor personal está directamente relacionado con su rendimiento 
+                académico.</li>
+            <li><strong>Procrastinación:</strong> Retrasar las tareas puede llevar a la acumulación de responsabilidades, lo que 
+                aumenta el estrés al tener que completarlas bajo presión de tiempo.</li>
+            <li><strong>Competencia académica:</strong> En algunos entornos educativos, los estudiantes compiten entre sí por 
+                obtener los mejores puestos o calificaciones, lo que añade otra capa de presión.</li>
+        </ul>
+        <p>
+            Otros factores como los problemas personales, la falta de sueño y el mal manejo del tiempo también pueden contribuir a 
+            elevar los niveles de estrés. Todos estos factores combinados pueden llevar a una situación de estrés crónico si no 
+            se gestionan adecuadamente.
+        </p>
+        <img src="estres3.webp" alt="Estudiante agobiado por libros">
+    </section>
+
+    <section id="efectos" class="content">
+        <h1 class="section-title">Efectos del Estrés en el Rendimiento Académico</h1>
+        <p>
+            El estrés puede tener efectos perjudiciales tanto en el rendimiento académico como en la salud física y emocional de los 
+            estudiantes. A continuación, se detallan algunos de los efectos más comunes que el estrés tiene sobre los estudiantes:
+        </p>
+        <ul>
+            <li><strong>Bajo rendimiento académico:</strong> Los estudiantes estresados pueden tener dificultades para concentrarse, 
+                lo que afecta su capacidad para retener información y desempeñarse bien en exámenes y tareas. Esto puede llevar a una 
+                disminución en las calificaciones.</li>
+            <li><strong>Falta de concentración y memoria:</strong> El estrés afecta la capacidad de atención y la memoria de trabajo, 
+                lo que hace que sea más difícil recordar lo que se ha estudiado.</li>
+            <li><strong>Fatiga mental y física:</strong> Los niveles elevados de estrés pueden llevar al agotamiento, afectando la 
+                energía y el enfoque del estudiante.</li>
+            <li><strong>Ansiedad:</strong> El estrés continuo puede derivar en episodios de ansiedad, lo que a su vez empeora el 
+                rendimiento académico y aumenta la preocupación y el miedo al fracaso.</li>
+            <li><strong>Problemas de sueño:</strong> El estrés altera los ciclos de sueño, haciendo que los estudiantes tengan 
+                dificultades para descansar adecuadamente. El sueño insuficiente afecta directamente la capacidad de concentración y 
+                el estado de ánimo.</li>
+            <li><strong>Problemas emocionales y físicos:</strong> Además de los problemas académicos, el estrés prolongado puede 
+                causar dolores de cabeza, problemas estomacales y aumentar el riesgo de padecer trastornos emocionales como la 
+                depresión.</li>
+        </ul>
+        <p>
+            El estrés no solo afecta el desempeño académico, sino que también puede afectar negativamente la autoestima y la 
+            motivación, creando un círculo vicioso en el que el estudiante se siente incapaz de mejorar su situación.
+        </p>
+        <img src="estres4.jpg" alt="Ilustración de efectos del estrés en el rendimiento">
+    </section>
+
+    <section id="soluciones" class="content">
+        <h1 class="section-title">Soluciones y Estrategias para Reducir el Estrés</h1>
+        <p>
+            Existen varias estrategias que los estudiantes pueden aplicar para manejar el estrés y mejorar su bienestar general. 
+            La clave está en la organización, el cuidado personal y en encontrar un equilibrio entre las responsabilidades 
+            académicas y el tiempo libre.
+        </p>
+        <p>Algunas soluciones efectivas para reducir el estrés incluyen:</p>
+        <ul>
+            <li><strong>Planificación y organización:</strong> Mantener un calendario detallado de tareas y exámenes puede 
+                ayudar a los estudiantes a distribuir mejor su tiempo y evitar el estrés de última hora. El uso de herramientas 
+                como agendas o aplicaciones móviles puede ser de gran ayuda.</li>
+            <li><strong>División de tareas:</strong> Dividir grandes proyectos en partes más manejables ayuda a evitar la 
+                procrastinación y reduce la sobrecarga.</li>
+            <li><strong>Ejercicio físico:</strong> El ejercicio regular es una excelente forma de reducir el estrés, ya que libera 
+                endorfinas, las hormonas que mejoran el estado de ánimo y reducen el estrés.</li>
+            <li><strong>Técnicas de relajación:</strong> La meditación, el yoga y las técnicas de respiración profunda son 
+                métodos eficaces para calmar la mente y reducir el estrés.</li>
+            <li><strong>Descanso adecuado:</strong> Dormir entre 7 y 9 horas diarias es crucial para que el cerebro procese 
+                correctamente la información y se mantenga en un estado óptimo de funcionamiento.</li>
+            <li><strong>Tiempo libre:</strong> Es importante que los estudiantes se permitan momentos de descanso y ocio. 
+                Participar en actividades recreativas o sociales ayuda a despejar la mente y mejorar el estado emocional.</li>
+            <li><strong>Apoyo social:</strong> Hablar con amigos, familiares o consejeros sobre las preocupaciones académicas puede 
+                ser una forma eficaz de aliviar el estrés. A veces, compartir los problemas ayuda a ver las cosas con más claridad.</li>
+        </ul>
+        <p>
+            Implementar estas estrategias no solo ayudará a reducir el estrés, sino que también mejorará el rendimiento académico 
+            y la calidad de vida en general. Los estudiantes deben recordar que el bienestar emocional es tan importante como 
+            el rendimiento académico, y encontrar un equilibrio saludable es la clave para alcanzar el éxito.
+        </p>
+        <img src="estres 5.jpg" alt="Ilustración de técnicas para manejar el estrés">
+    </section>
+
+    <script>
+        function openTab(event, tabName) {
+            var i, content, links;
+            content = document.getElementsByClassName("content");
+            for (i = 0; i < content.length; i++) {
+                content[i].style.display = "none";
+            }
+            links = document.getElementsByTagName("a");
+            for (i = 0; i < links.length; i++) {
+                links[i].classList.remove("active");
+            }
+            document.getElementById(tabName).style.display = "block";
+            event.currentTarget.classList.add("active");
+        }
+
+        // Mostrar la primera pestaña como activa al cargar la página
+        document.getElementById('home').style.display = 'block';
+    </script>
+</body>
+</html>
